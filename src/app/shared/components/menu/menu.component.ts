@@ -38,15 +38,18 @@ export class MenuComponent implements OnInit {
             command: () => {
               this.router.navigate(['/uncommon'])
             }
-          }
+          },
         ]
       },
       {
         label: "pipes personalizados",
         icon: 'pi pi-cog',
-        items: [{
-          label: 'Otro elemento',
-          icon: 'pi pi-cog'
+        items: [          {
+          label: 'custom Pipes',
+          icon: 'pi pi-globe',
+          command: () => {
+            this.router.navigate(['/custom'])
+          }
         }]
 
       }
